@@ -13,7 +13,7 @@ const App = props => {
         <CodeCampMenu birthdayTotal={props.birthdayTotal} />
       </PageTop>
       {renderRoutes(props.route.routes)}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
