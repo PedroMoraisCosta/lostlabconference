@@ -15562,7 +15562,7 @@ if (!production) {
   __webpack_require__(161).config();
 }
 
-var restUrl = production ? "https://magest2api-3bbfb75c6660.herokuapp.com" : "https://localhost:44370/";
+var restUrl = production ? "https://localhost:49155/" : "https://localhost:44370/";
 
 var middleware = [_reduxThunk2.default, (0, _reduxAxiosMiddleware2.default)(_axios2.default.create({
   baseURL: restUrl
@@ -20773,8 +20773,7 @@ var App = function App(props) {
       null,
       _react2.default.createElement(_CodeCampMenu2.default, { birthdayTotal: props.birthdayTotal })
     ),
-    (0, _reactRouterConfig.renderRoutes)(props.route.routes),
-    _react2.default.createElement(_Footer2.default, null)
+    (0, _reactRouterConfig.renderRoutes)(props.route.routes)
   );
 };
 
