@@ -18,71 +18,71 @@ export default [
   {
     ...App,
     routes: [
-      {
-        ...Home,
-        path: '/home',
-        exact: true
-      },
-      {
-        ...Customers,
-        path: '/customers',
-        exact: true
-      },
-      {
-        ...ManageBooking,
-        path: '/addbooking/:date',
-        exact: true
-      },
-      {
-        ...ManageBooking,
-        path: '/addbooking',
-        exact: true
-      },
-      {
-        ...ManageBooking,
-        path: '/booking/:id',
-        exact: true
-      },
-      {
-        ...Booking,
-        path: '/booking',
-        exact: true
-      },
-      {
-        ...ManageServices,
-        path: '/addservice',
-        exact: true
-      },
-      {
-        ...ManageServices,
-        path: '/services/:id',
-        exact: true
-      },
-      {
-        ...Services,
-        path: '/services',
-        exact: true
-      },
-      {
-        ...ManageCustomers,
-        path: '/customer/:id',
-        exact: true
-      },
-      {
-        ...ManageCustomers,
-        path: '/customer',
-        exact: true
-      },
-      {
-        ...Calendar,
-        path: '/calendar',
-        exact: true
-      },
-      {
-        ...CalendarWeek,
-        path: '/calendarweek',
-        exact: true
-      },
+      // {
+      //   ...Home,
+      //   path: '/home',
+      //   exact: true
+      // },
+      // {
+      //   ...Customers,
+      //   path: '/customers',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageBooking,
+      //   path: '/addbooking/:date',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageBooking,
+      //   path: '/addbooking',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageBooking,
+      //   path: '/booking/:id',
+      //   exact: true
+      // },
+      // {
+      //   ...Booking,
+      //   path: '/booking',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageServices,
+      //   path: '/addservice',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageServices,
+      //   path: '/services/:id',
+      //   exact: true
+      // },
+      // {
+      //   ...Services,
+      //   path: '/services',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageCustomers,
+      //   path: '/customer/:id',
+      //   exact: true
+      // },
+      // {
+      //   ...ManageCustomers,
+      //   path: '/customer',
+      //   exact: true
+      // },
+      // {
+      //   ...Calendar,
+      //   path: '/calendar',
+      //   exact: true
+      // },
+      // {
+      //   ...CalendarWeek,
+      //   path: '/calendarweek',
+      //   exact: true
+      // },
       {
         ...Login,
         path: '/',
@@ -93,16 +93,16 @@ export default [
         path: '/aniversarios',
         exact: true
       },
-      {
-        ...Analise,
-        path: '/analise',
-        exact: true
-      },
-      {
-        ...Acompanhamento,
-        path: '/acompanhamento',
-        exact: true
-      },
+      // {
+      //   ...Analise,
+      //   path: '/analise',
+      //   exact: true
+      // },
+      // {
+      //   ...Acompanhamento,
+      //   path: '/acompanhamento',
+      //   exact: true
+      // },
       // {
       //   ...Speakers,
       //   path: '/speakers',

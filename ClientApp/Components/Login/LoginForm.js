@@ -5,25 +5,40 @@ function LoginForm (props) {
   return (
     <form onSubmit={props.onSubmit}>
       <TextInput
-        id='user'
-        label='Utilizador'
-        name='user'
-        value={props.login.user}
+        id='name'
+        label=''
+        name='name'
+        value={props.login.name}
         onChange={props.onChange}
-        error={props.errors.user}
+        error={props.errors.name}
       />
       <TextInput
-        type='password'
-        id='pass'
-        label='Password'
-        name='pass'
-        value={props.login.pass}
+        id='birth'
+        label=''
+        name='birth'
+        value={props.login.birth}
         onChange={props.onChange}
-        error={props.errors.pass}
+        error={props.errors.birth}
+      />
+      <TextInput
+        id='email'
+        label=''
+        name='email'
+        value={props.login.email}
+        onChange={props.onChange}
+        error={props.errors.email}
+      />
+      <TextInput
+        id='phone'
+        label=''
+        name='phone'
+        value={props.login.phone}
+        onChange={props.onChange}
+        error={props.errors.phone}
       />
       <input
         type='submit'
-        value='Entrar'
+        value='Registar'
         className='btn btn-primary btn-customer'
       />
     </form>

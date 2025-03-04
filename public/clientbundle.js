@@ -554,6 +554,37 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Loading;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Loading(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: 'alert alert-info alert-dismissible fade show' },
+    _react2.default.createElement(
+      'h1',
+      null,
+      props.title,
+      '...'
+    )
+  );
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -617,37 +648,6 @@ if (__DEV__) {
 
 module.exports = warning;
 
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Loading;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Loading(props) {
-  return _react2.default.createElement(
-    'div',
-    { className: 'alert alert-info alert-dismissible fade show' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      props.title,
-      '...'
-    )
-  );
-}
 
 /***/ }),
 /* 8 */
@@ -1880,7 +1880,7 @@ function searchChange(searchtext, customersList) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -5155,7 +5155,7 @@ function pathToRegexp (path, keys, options) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -7036,7 +7036,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -7197,7 +7197,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
@@ -7322,7 +7322,7 @@ Redirect.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -7492,7 +7492,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
@@ -8524,8 +8524,8 @@ function loginCall(login) {
     type: LOGIN_LOAD,
     payload: {
       request: {
-        method: 'PUT',
-        url: '/logins',
+        method: 'POST',
+        url: '/lostlabcustomers',
         data: _extends({}, login)
       }
     }
@@ -14038,7 +14038,7 @@ module.exports = hoistNonReactStatics;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -14104,7 +14104,7 @@ BrowserRouter.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -15107,7 +15107,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(6);
+var _warning = __webpack_require__(7);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -15276,7 +15276,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _warning = __webpack_require__(6);
+var _warning = __webpack_require__(7);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -15370,7 +15370,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(6);
+var _warning = __webpack_require__(7);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -15562,7 +15562,7 @@ if (!production) {
   __webpack_require__(161).config();
 }
 
-var restUrl = production ? "https://localhost:49155/" : "https://localhost:44370/";
+var restUrl = production ? "https://magest2api-3bbfb75c6660.herokuapp.com" : "https://localhost:44370/";
 
 var middleware = [_reduxThunk2.default, (0, _reduxAxiosMiddleware2.default)(_axios2.default.create({
   baseURL: restUrl
@@ -16509,6 +16509,8 @@ var _login = __webpack_require__(61);
 
 function login() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    isLoading: false,
+    hasErrored: false,
     unauthorized: true
   };
   var action = arguments[1];
@@ -16516,21 +16518,32 @@ function login() {
   switch (action.type) {
     case _login.LOGIN_LOAD:
       {
-        return state;
+        console.log('--- Triggered APP_LOADED ---');
+        return Object.assign({}, state, {
+          unauthorized: true,
+          isLoading: true,
+          hasErrored: false
+        });
       }
     case _login.LOGIN_LOAD_SUCCESS:
       {
+        console.log('--- Triggered REGISTER_SUCCESS ---');
         var st = Object.assign({}, state, {
-          unauthorized: action.payload.data
+          isLoading: false,
+          hasErrored: false,
+          unauthorized: false
+          //action.payload.data
         });
         return st;
       }
     case _login.LOGIN_LOAD_FAIL:
       {
-        console.log('--- Triggered LOGIN_LOAD_FAIL ---');
+        console.log('--- Triggered REGISTER_FAILED ---');
         return Object.assign({}, state, {
-          unauthorized: true
-          //action.payload.data.unauthorized
+          unauthorized: true,
+          isLoading: false,
+          hasErrored: true,
+          errorMessage: action.error.message
         });
       }
     default:
@@ -18667,58 +18680,89 @@ var _Acompanhamento2 = _interopRequireDefault(_Acompanhamento);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = [_extends({}, _App2.default, {
-  routes: [_extends({}, _Home2.default, {
-    path: '/home',
-    exact: true
-  }), _extends({}, _Customers2.default, {
-    path: '/customers',
-    exact: true
-  }), _extends({}, _ManageBooking2.default, {
-    path: '/addbooking/:date',
-    exact: true
-  }), _extends({}, _ManageBooking2.default, {
-    path: '/addbooking',
-    exact: true
-  }), _extends({}, _ManageBooking2.default, {
-    path: '/booking/:id',
-    exact: true
-  }), _extends({}, _Booking2.default, {
-    path: '/booking',
-    exact: true
-  }), _extends({}, _ManageServices2.default, {
-    path: '/addservice',
-    exact: true
-  }), _extends({}, _ManageServices2.default, {
-    path: '/services/:id',
-    exact: true
-  }), _extends({}, _Services2.default, {
-    path: '/services',
-    exact: true
-  }), _extends({}, _ManageCustomers2.default, {
-    path: '/customer/:id',
-    exact: true
-  }), _extends({}, _ManageCustomers2.default, {
-    path: '/customer',
-    exact: true
-  }), _extends({}, _Calendar2.default, {
-    path: '/calendar',
-    exact: true
-  }), _extends({}, _Calendarweek2.default, {
-    path: '/calendarweek',
-    exact: true
-  }), _extends({}, _Login2.default, {
+  routes: [
+  // {
+  //   ...Home,
+  //   path: '/home',
+  //   exact: true
+  // },
+  // {
+  //   ...Customers,
+  //   path: '/customers',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageBooking,
+  //   path: '/addbooking/:date',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageBooking,
+  //   path: '/addbooking',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageBooking,
+  //   path: '/booking/:id',
+  //   exact: true
+  // },
+  // {
+  //   ...Booking,
+  //   path: '/booking',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageServices,
+  //   path: '/addservice',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageServices,
+  //   path: '/services/:id',
+  //   exact: true
+  // },
+  // {
+  //   ...Services,
+  //   path: '/services',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageCustomers,
+  //   path: '/customer/:id',
+  //   exact: true
+  // },
+  // {
+  //   ...ManageCustomers,
+  //   path: '/customer',
+  //   exact: true
+  // },
+  // {
+  //   ...Calendar,
+  //   path: '/calendar',
+  //   exact: true
+  // },
+  // {
+  //   ...CalendarWeek,
+  //   path: '/calendarweek',
+  //   exact: true
+  // },
+  _extends({}, _Login2.default, {
     path: '/',
     exact: true
   }), _extends({}, _Aniversarios2.default, {
     path: '/aniversarios',
     exact: true
-  }), _extends({}, _Analise2.default, {
-    path: '/analise',
-    exact: true
-  }), _extends({}, _Acompanhamento2.default, {
-    path: '/acompanhamento',
-    exact: true
   }),
+  // {
+  //   ...Analise,
+  //   path: '/analise',
+  //   exact: true
+  // },
+  // {
+  //   ...Acompanhamento,
+  //   path: '/acompanhamento',
+  //   exact: true
+  // },
   // {
   //   ...Speakers,
   //   path: '/speakers',
@@ -19758,6 +19802,10 @@ var _LoginForm2 = _interopRequireDefault(_LoginForm);
 
 var _login = __webpack_require__(61);
 
+var _Loading = __webpack_require__(6);
+
+var _Loading2 = _interopRequireDefault(_Loading);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -19769,8 +19817,10 @@ var Login = exports.Login = function Login(props) {
       setErrors = _useState2[1];
 
   var _useState3 = (0, _react.useState)({
-    user: 'Margarida',
-    pass: '',
+    name: '',
+    birth: '',
+    email: '',
+    phone: '',
     unauthorized: props.unauthorized
   }),
       _useState4 = _slicedToArray(_useState3, 2),
@@ -19782,7 +19832,7 @@ var Login = exports.Login = function Login(props) {
     if (!formIsValid()) return;
     var prom1 = props.loginCall(login);
     Promise.all([prom1]).then(function () {
-      props.history.push('/customers');
+      props.history.push('/aniversarios');
     }).catch(function () {
       console.log('error on login');
     });
@@ -19797,20 +19847,59 @@ var Login = exports.Login = function Login(props) {
 
   function formIsValid() {
     var _errors = {};
-    if (!login.user) _errors.user = 'Utilizador obrigat\xF3rio';
+    if (!login.name) _errors.name = 'Nome obrigat\xF3rio';
 
-    if (!login.pass) _errors.pass = 'Password obrigat\xF3ria';
+    if (!login.birth) _errors.birth = 'Data de Nascimento obrigat\xF3rio';
 
+    if (login.email) {
+      if (!login.email.match(/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) _errors.email = 'Email inv\xE1lido';
+    } else {
+      _errors.email = 'Email obrigat\xF3rio';
+    }
+
+    if (login.phone) {
+      if (!login.phone.toString().match(/^[0-9]{9}$/)) _errors.phone = 'Telem\xF3vel inv\xE1lido';
+    } else {
+      _errors.phone = 'Telefone obrigat\xF3rio';
+    }
     setErrors(_errors);
     return Object.keys(_errors).length === 0;
   }
 
-  return _react2.default.createElement(_LoginForm2.default, {
-    login: login,
-    onSubmit: handleSubmit,
-    onChange: handleChange,
-    errors: errors
-  });
+  (0, _react.useEffect)(function () {
+    setLogin(function (prev) {
+      return _extends({}, prev, { unauthorized: props.unauthorized });
+    });
+  }, [props.unauthorized]);
+
+  var showHtml = void 0;
+  if (props.isLoading) {
+    showHtml = _react2.default.createElement(_Loading2.default, { title: 'Em espera...' });
+  } else if (props.hasErrored) {
+    showHtml = _react2.default.createElement(
+      'div',
+      { className: 'alert alert-danger alert-dismissible fade show' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Falha ao ler os dados: ',
+        props.errorMessage
+      )
+    );
+  } else {
+    showHtml = _react2.default.createElement(_LoginForm2.default, {
+      login: login,
+      onSubmit: handleSubmit,
+      onChange: handleChange,
+      errors: errors
+    });
+  }
+
+  return _react2.default.createElement(
+    'div',
+    null,
+    showHtml
+  );
 };
 
 function loadData() {
@@ -19823,7 +19912,9 @@ Login.defaultProps = {};
 function mapStateToProps(state) {
   return {
     login: state.login,
-    unauthorized: state.login.unauthorized
+    unauthorized: state.login.unauthorized,
+    hasErrored: state.login.hasErrored,
+    isLoading: state.login.isLoading
   };
 }
 
@@ -19866,25 +19957,40 @@ function LoginForm(props) {
     'form',
     { onSubmit: props.onSubmit },
     _react2.default.createElement(_TextInput2.default, {
-      id: 'user',
-      label: 'Utilizador',
-      name: 'user',
-      value: props.login.user,
+      id: 'name',
+      label: '',
+      name: 'name',
+      value: props.login.name,
       onChange: props.onChange,
-      error: props.errors.user
+      error: props.errors.name
     }),
     _react2.default.createElement(_TextInput2.default, {
-      type: 'password',
-      id: 'pass',
-      label: 'Password',
-      name: 'pass',
-      value: props.login.pass,
+      id: 'birth',
+      label: '',
+      name: 'birth',
+      value: props.login.birth,
       onChange: props.onChange,
-      error: props.errors.pass
+      error: props.errors.birth
+    }),
+    _react2.default.createElement(_TextInput2.default, {
+      id: 'email',
+      label: '',
+      name: 'email',
+      value: props.login.email,
+      onChange: props.onChange,
+      error: props.errors.email
+    }),
+    _react2.default.createElement(_TextInput2.default, {
+      id: 'phone',
+      label: '',
+      name: 'phone',
+      value: props.login.phone,
+      onChange: props.onChange,
+      error: props.errors.phone
     }),
     _react2.default.createElement('input', {
       type: 'submit',
-      value: 'Entrar',
+      value: 'Registar',
       className: 'btn btn-primary btn-customer'
     })
   );
@@ -19997,7 +20103,7 @@ var _customers = __webpack_require__(31);
 
 var _booking = __webpack_require__(12);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -20768,11 +20874,7 @@ var App = function App(props) {
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(
-      _PageTop2.default,
-      null,
-      _react2.default.createElement(_CodeCampMenu2.default, { birthdayTotal: props.birthdayTotal })
-    ),
+    _react2.default.createElement(_PageTop2.default, null),
     (0, _reactRouterConfig.renderRoutes)(props.route.routes)
   );
 };
@@ -21096,7 +21198,7 @@ var _calendar = __webpack_require__(17);
 
 var _booking = __webpack_require__(12);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -21484,7 +21586,7 @@ var _calendar = __webpack_require__(17);
 
 var _booking = __webpack_require__(12);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -22268,7 +22370,7 @@ var _reactRedux = __webpack_require__(2);
 
 var _booking = __webpack_require__(12);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -22405,7 +22507,7 @@ var _Search = __webpack_require__(67);
 
 var _Search2 = _interopRequireDefault(_Search);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -22570,7 +22672,7 @@ var _reactRedux = __webpack_require__(2);
 
 var _services = __webpack_require__(18);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -22966,7 +23068,7 @@ var _ServiceForm2 = _interopRequireDefault(_ServiceForm);
 
 var _services = __webpack_require__(18);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -23546,7 +23648,7 @@ var _SelectDrop = __webpack_require__(214);
 
 var _SelectDrop2 = _interopRequireDefault(_SelectDrop);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -24909,7 +25011,7 @@ var _AniversariosContainer2 = _interopRequireDefault(_AniversariosContainer);
 
 var _reactRedux = __webpack_require__(2);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -25205,7 +25307,7 @@ var _AnaliseContainer2 = _interopRequireDefault(_AnaliseContainer);
 
 var _reactRedux = __webpack_require__(2);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -25604,7 +25706,7 @@ var _AcompanhamentoContainer2 = _interopRequireDefault(_AcompanhamentoContainer)
 
 var _reactRedux = __webpack_require__(2);
 
-var _Loading = __webpack_require__(7);
+var _Loading = __webpack_require__(6);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
