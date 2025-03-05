@@ -28,6 +28,9 @@ document
       document.getElementById('error-birthdate').textContent =
         'Data de nascimento é obrigatória.'
       hasError = true
+    } else if (new Date(birth) > new Date("2025-01-01")) {
+        document.getElementById("error-birthdate").textContent = "A data de nascimento deve ser anterior a 01/01/2025.";
+        hasError = true;
     }
 
     if (!validateEmail(email)) {
