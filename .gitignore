@@ -4,3 +4,5 @@ debug.log
 /.vs/lostlabconference/FileContentIndex
 /.vs/slnx.sqlite
 /.vs/slnx.sqlite-journal
+/.vs/lostlabconference/config/applicationhost.config
+/.gitignore

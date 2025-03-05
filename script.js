@@ -29,7 +29,7 @@ document
         'Data de nascimento é obrigatória.'
       hasError = true
     } else if (new Date(birth) > new Date("2025-01-01")) {
-        document.getElementById("error-birthdate").textContent = "A data de nascimento deve ser anterior a 01/01/2025.";
+        document.getElementById("error-birthdate").textContent = "A data de nascimento inválida.";
         hasError = true;
     }
 
@@ -79,8 +79,12 @@ document
       submitButton.innerHTML = 'Registar' // Restaura o texto original
     }
 
-    if (!hasError) {
-      window.location.href = 'codigo.html'
+     if (!hasError) {
+        let codigo = String(Math.floor(100 + Math.random() * 900));
+
+        // Salvar no sessionStorage
+        sessionStorage.setItem("codigo", codigo);
+        window.location.href = 'codigo.html'
     }
   })
 
