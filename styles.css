@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: monospace;
 }
 
 body {
@@ -12,12 +12,35 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-width: 200px;
+}
+.container {
+    max-width: 375px;
+    height: 684px;
+    width: 100%;
+    min-width: 250px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
 }
 
-.container {
+
+/* Ensure that all input placeholders are gray */
+input::placeholder,
+textarea::placeholder {
+    color: gray !important;
+}
+/* .container {
     width: 90%;
     max-width: 400px;
     text-align: center;
+} */
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    height: 15px;
 }
 
 .logo {
@@ -28,6 +51,8 @@ body {
 form {
     display: flex;
     flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 input, button {
@@ -64,8 +89,32 @@ button:hover {
     text-decoration: underline;
 }
 
-.error-message {
-    color: red;
-    font-size: 12px;
-    height: 15px;
+
+
+.form-check{
+    display: flex;
+    font-size: 10px;
 }
+.form-check-color{
+    color: #828282
+}
+.form-check-color a{
+    color: #FFFFFF
+}
+.form-check-label{
+    padding-left: 5px;
+}
+.imgRandom{
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+}
+.imgThanks{
+    width: 240px;
+    height: 250px;
+    margin-top: 20px;    
+}
+.imgRandomcontainer{
+    margin-top: -20px;
+}
+
