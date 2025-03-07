@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     min-width: 200px;
+    overflow: hidden;
 }
 .container {
     max-width: 375px;
