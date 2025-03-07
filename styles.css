@@ -19,6 +19,7 @@ body {
     height: 684px;
     width: 100%;
     min-width: 250px;
+    height: 100%;
 }
 .error-message {
     color: red;
