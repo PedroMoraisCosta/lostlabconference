@@ -28,9 +28,10 @@ document
       document.getElementById('error-birthdate').textContent =
         'Data de nascimento é obrigatória.'
       hasError = true
-    } else if (new Date(birth) > new Date("2025-01-01")) {
-        document.getElementById("error-birthdate").textContent = "A data de nascimento inválida.";
-        hasError = true;
+    } else if (new Date(birth) > new Date('2025-01-01')) {
+      document.getElementById('error-birthdate').textContent =
+        'A data de nascimento inválida.'
+      hasError = true
     }
 
     if (!validateEmail(email)) {
@@ -57,7 +58,7 @@ document
     // Envio de dados para API
     try {
       const response = await fetch(
-        'https://magest2api-3bbfb75c6660.herokuapp.com/lostlabcustomers',
+        'https://magest2api-3bbfb75c6660.herokuapp.com/lostlabcustomers1',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -65,7 +66,13 @@ document
         }
       )
 
-      if (!response.ok) throw new Error('Erro a gerar código. Tente novamente.')
+      if (!response.ok) {
+        throw new Error(
+          'Serviço ocupado...Tente novamente em alguns segundos (' +
+            response.statusText +
+            ')'
+        )
+      }
 
       //alert("Registo concluído com sucesso!");
       //window.location.href = "codigo.html"; // Redirecionamento
@@ -73,18 +80,17 @@ document
       hasError = true
 
       //alert(error.message);
-      document.getElementById('error-submit').textContent =
-        'Erro a submeter dados.'
+      document.getElementById('error-submit').textContent = error.message
       submitButton.disabled = false // Reativa o botão em caso de erro
       submitButton.innerHTML = 'Registar' // Restaura o texto original
     }
 
-     if (!hasError) {
-        let codigo = String(Math.floor(100 + Math.random() * 900));
+    if (!hasError) {
+      let codigo = String(Math.floor(100 + Math.random() * 900))
 
-        // Salvar no sessionStorage
-        sessionStorage.setItem("codigo", codigo);
-        window.location.href = 'codigo.html'
+      // Salvar no sessionStorage
+      sessionStorage.setItem('codigo', codigo)
+      window.location.href = 'codigo.html'
     }
   })
 
