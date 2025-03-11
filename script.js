@@ -58,7 +58,7 @@ document
     // Envio de dados para API
     try {
       const response = await fetch(
-        'https://magest2api-3bbfb75c6660.herokuapp.com/lostlabcustomers1',
+        'https://magest2api-3bbfb75c6660.herokuapp.com/lostlabcustomers',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
